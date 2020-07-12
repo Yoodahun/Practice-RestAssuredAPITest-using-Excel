@@ -7,7 +7,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class DataDriven {
 
@@ -63,5 +65,16 @@ public class DataDriven {
         }
 
         return arrayList;
+    }
+
+    public Map getBody() {
+        Map<String, Object> jsonAsMap = new HashMap<>();
+        jsonAsMap.put("name", "Learn Appium Automation with Java");
+        jsonAsMap.put("isbn", "asdgggas");
+        jsonAsMap.put("aisle", "2123212");
+        jsonAsMap.put("author", "John foe");
+
+        return jsonAsMap;
+
     }
 }
